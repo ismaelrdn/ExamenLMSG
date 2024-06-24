@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calorie Tracker</h1>
+        <div class="log-calorie-intake">
+            <h2>Log Calorie Intake</h2>
+            <form id="calorie-form">
+                <input type="text" id="meal" placeholder="Nombre de la comida" required>
+                <input type="number" id="calories" placeholder="Indique Calorias" required>
+                <button type="submit">Añade Alimento</button>
+            </form>
+        </div>
+        <div class="historical-data">
+            <h2>Tus comidas guardadas</h2>
+            <ul id="calorie-list"></ul>
+            <button id="delete-all">Borrar todas</button>
+        </div>
+    </div>
+</body>
+</html>
